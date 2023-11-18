@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="353.0" prefWidth="365.0" style="-fx-background-color: purple;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.deluxerpanda.click.Countdown">
+   <children>
+      <Button fx:id="onstart" contentDisplay="CENTER" layoutX="86.0" layoutY="192.0" mnemonicParsing="false" onAction="#onstart" prefHeight="45.0" prefWidth="191.0" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="69.0" />
+         </font>
+      </Button>
+      <Button fx:id="onstop" contentDisplay="CENTER" disable="true" layoutX="86.0" layoutY="192.0" mnemonicParsing="false" onAction="#onstop" prefHeight="147.0" prefWidth="191.0" text="" textAlignment="CENTER" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="69.0" />
+         </font>
+      </Button>
+      <Text fx:id="Banner_text" fill="#1eebee" layoutX="61.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hur lång är filmen" visible="false" wrappingWidth="265.99998208880424">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="labelinfotid" fill="#808080" layoutX="42.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0H,0M,0S" textAlignment="CENTER" visible="false" wrappingWidth="281.00000551342964">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Text>
+      <Text fx:id="Startandstoptext" disable="true" layoutX="82.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start" textAlignment="CENTER" visible="false" wrappingWidth="199.0">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Text>
+      <Button fx:id="resetknapp" layoutX="108.0" layoutY="49.0" mnemonicParsing="false" onAction="#resetknapp" prefHeight="30.0" prefWidth="148.0" text="Ändra musens plats" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <TextField fx:id="timme" alignment="CENTER" layoutX="2.0" layoutY="85.0" prefHeight="54.0" prefWidth="120.0" promptText="Timmar" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="minuter" alignment="CENTER" layoutX="124.0" layoutY="85.0" prefHeight="54.0" prefWidth="116.0" promptText="Minuter" visible="false">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="sekunder" alignment="CENTER" layoutX="242.0" layoutY="85.0" prefHeight="54.0" prefWidth="121.0" promptText="Sekunder" visible="false" AnchorPane.leftAnchor="242.0">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </TextField>
+      <Text fx:id="textmusskaklicka" fill="#1eebee" layoutX="33.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="håll musen över och klicka på &quot;S&quot; där du vill att musen ska klicka" textAlignment="CENTER" wrappingWidth="296.49998208880424">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
